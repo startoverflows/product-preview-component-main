@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --Darkcyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Verydarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: var(--Cream);
+  width: 343px;
+  padding: 28px 16px;
+  background-color: var(--Cream);
+}
+
+.img-container {
+  width: 343px;
+  height: 240px;
+}
+
+.img-container .image-mobile {
+  display: block;
+  width: 343px;
+  margin: 0 auto;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.img-container .image-desktop {
+  display: none;
+}
+
+.text-container {
+  width: 343px;
+  background-color: var(--White);
+  margin: 0 24px;
+}
+
+.text-container .perfume {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.42em;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 32px 24px 18px 24px;
+  color: var(--Darkgrayishblue);
+}
+
+.text-container .preview {
+  display: block;
+  padding: 0px 24px 17px 24px;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100.8%;
+  letter-spacing: 0.02em;
+  color: var(--Verydarkblue);
+}
+
+#floral {
+  display: block;
+  padding: 0px 24px 21px 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 164.9%;
+  letter-spacing: -0.005em;
+  color: var(--Darkgrayishblue);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.price {
+  display: flex;
+  padding: 0px 24px 17px 24px;
+  font-style: normal;
+  align-items: center;
+}
+.price #new-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #356c58;
+}
+
+.price #old-price {
+  margin-left: 20px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.015em;
+  text-decoration-line: line-through;
+}
+
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  margin: 0px 24px 25px 24px;
+  background: #356c58;
+  border-radius: 10px;
+}
+
+.add-to-cart h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  padding-left: 10px;
+  letter-spacing: -0.03em;
+  color: var(--White);
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 0;
+    border-radius: 0;
+  }
+  .wrapper {
+    flex-direction: row;
+    width: 1440px;
+    height: 1024px;
+  }
+  .img-container {
+    width: 384px;
+    height: 576px;
+  }
+
+  .img-container .image-mobile {
+    display: none;
+  }
+
+  .img-container .image-desktop {
+    display: block;
+    width: 384px;
+    height: 576px;
+    border-radius: 15px 0px 0px 15px;
+  }
+  .text-container {
+    width: 384px;
+    height: 576px;
+    margin: 0px;
+    border-radius: 0px 15px 15px 0px;
+  }
+  .text-container .perfume {
+    letter-spacing: 0.42em;
+    font-size: 16px;
+    padding: 50px 0px 35px 42px;
+  }
+  .text-container .preview {
+    padding: 0px 42px 35px 42px;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  #floral {
+    padding: 0px 42px 36px 42px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--Darkgrayishblue);
+  }
+  .price {
+    padding: 0px 42px 34px 42px;
+    font-style: normal;
+    align-items: center;
+  }
+  .price #new-price {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #356c58;
+  }
+
+  .price #old-price {
+    margin-left: 29px;
+    font-family: "Montserrat";
+    font-size: 16px;
+  }
+  .add-to-cart {
+    height: 61px;
+    margin: 0px 42px 42px 42px;
+  }
+
+  .add-to-cart h1 {
+    font-weight: 700;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  .add-to-cart svg {
+    width: 1.125em;
+  }
+}
